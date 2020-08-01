@@ -1,8 +1,8 @@
 <?php
 include "conection.php";
 
-$sql = 'INSERT INTO heroes_tb (name, type_id, photo)
-VALUES ("'.$_POST["name"].'", "'.$_POST["typeofhero"].'", "'.$_POST["photo"].'")';
+$sql = 'INSERT INTO type_tb (name)
+VALUES ("'.$_POST["name"].'")';
 
 if (mysqli_query($conn, $sql)) {
     header('Location: index.php');
