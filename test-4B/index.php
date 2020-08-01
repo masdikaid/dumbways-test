@@ -86,6 +86,7 @@ include "conection.php";
                                 } else {
                                     echo '<option>No Result</option>';
                                 }
+                                mysqli_close($conn);
                             ?>
                         </select>
                     </div>
